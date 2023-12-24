@@ -25,9 +25,12 @@ const TransactionList = ({ data }) => {
   console.log(data);
   return (
     <div>
-      <ul className="flex flex-col gap-5">
+      <ul className="flex flex-col gap-5 ">
         {data.map((datas) => (
-          <li className="bg-gray-100 p-5 flex flex-row" key={datas._id}>
+          <li
+            className="bg-gray-100 p-5 flex flex-row rounded-3xl bg-white/30 backdrop-blur-md"
+            key={datas._id}
+          >
             <div className="flex flex-col gap-3">
               <p className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20 w-fit">
                 {datas.kategori}

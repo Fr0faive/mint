@@ -28,15 +28,17 @@ const Header = () => {
     },
   ];
   return (
-    <div>
-      <ul className="flex gap-5 py-10">
+    <div className="flex justify-center py-4">
+      <ul className="flex gap-8 py-5 bg-white/50 drop-shadow-lg px-4 rounded-2xl">
         {Navlink.map((link, i) => {
           return (
             <li key={i}>
               <Link
                 href={link.link}
                 className={
-                  pathname === `${link.link}` ? "text-blue-500 font-bold" : ""
+                  pathname === `${link.link}`
+                    ? "text-blue-500 font-extrabold"
+                    : "font-medium"
                 }
               >
                 {link.name}

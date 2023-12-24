@@ -25,12 +25,12 @@ const DetailTransactionPage = ({ params }) => {
       });
   }, []);
   return (
-    <div>
-      <h1 className="text-3xl font-bold">
+    <div className="bg-white/30 backdrop-blur-md pb-4 px-4 rounded-3xl">
+      <h1 className="text-3xl font-bold p-5 px-3">
         {" "}
         <a href="/transaction">&larr;</a> Detail Transaction
       </h1>
-      <div className="border flex flex-col gap-3 border-black p-4 rounded-lg">
+      <div className="flex flex-col gap-3 p-7 rounded-3xl bg-white/30 backdrop-blur-md">
         <div className="flex flex-row justify-between">
           <p className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20 w-fit">
             {data.kategori}

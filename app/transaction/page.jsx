@@ -16,12 +16,16 @@ const TransactionsPage = async () => {
   const [transactions] = await Promise.all([getTransactions()]);
   console.log(transactions);
   return (
-    <div>
-      <h1 className="text-4xl mb-4">Transaction List</h1>
+    <div className="rounded-3xl bg-white/30 backdrop-blur-md p-4">
+      <h1 className="text-4xl mb-4 font-bold p-4">Transaction List</h1>
       <ul className="flex flex-col gap-5">
         {transactions.map((transaction) => (
-          <Link href={`/transaction/${transaction._id}`} key={transaction._id}>
-            <li className="bg-gray-100 p-5 cursor-pointer flex flex-col gap-3">
+          <Link
+            href={`/transaction/${transaction._id}`}
+            key={transaction._id}
+            className=" rounded-3xl bg-white/30 backdrop-blur-md"
+          >
+            <li className=" p-5 cursor-pointer flex flex-col gap-3">
               <div className="flex flex-row justify-between">
                 <div className="flex flex-row gap-3">
                   <p className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20 w-fit">

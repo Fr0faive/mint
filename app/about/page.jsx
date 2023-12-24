@@ -2,8 +2,8 @@ import React from "react";
 
 const Aboutpage = () => {
   return (
-    <div>
-      <h1 className="text-4xl">About Me</h1>
+    <div className="bg-white/30 backdrop-blur-md p-4 rounded-3xl">
+      <h1 className="text-3xl font-semibold px-4">About Me</h1>
       <table className="table-auto border-spacing-4 border-separate">
         <tbody>
           <tr>

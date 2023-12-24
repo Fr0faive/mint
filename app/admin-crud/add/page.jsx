@@ -40,14 +40,14 @@ const AddPage = () => {
     }));
   };
   return (
-    <div className="flex flex-col px-5 gap-5">
-      <h1 className="text-3xl font-bold">
+    <div className="flex flex-col p-5 gap-5 bg-white/30 backdrop-blur-md rounded-3xl">
+      <h1 className="text-3xl font-bold px-4">
         <a href="/admin-crud">&larr;</a> Tambahkan Catatan
       </h1>
       <form
         action=""
         onSubmit={handleSubmit}
-        className="border flex flex-col gap-3 border-black p-4 rounded-lg"
+        className="flex flex-col gap-3 p-10 bg-white/30 backdrop-blur-md rounded-3xl"
       >
         <label htmlFor="nama">Nama Catatan</label>
         <input
