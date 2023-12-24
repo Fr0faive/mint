@@ -17,7 +17,7 @@ const TransactionList = ({ data }) => {
           console.log(err);
         })
         .finally(() => {
-          // window.location.reload();
+          window.location.reload();
         });
     }
   };
