@@ -19,11 +19,11 @@ const Header = () => {
       link: "/about/contact",
     },
     {
-      name: "Transaction List",
+      name: "List Catatan",
       link: "/transaction",
     },
     {
-      name: "Admin-CRUD",
+      name: "Kelola Catatan",
       link: "/admin-crud",
     },
   ];

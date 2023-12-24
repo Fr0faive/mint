@@ -26,7 +26,10 @@ const DetailTransactionPage = ({ params }) => {
   }, []);
   return (
     <div>
-      <h1 className="text-3xl font-bold">Detail Transaction</h1>
+      <h1 className="text-3xl font-bold">
+        {" "}
+        <a href="/transaction">&larr;</a> Detail Transaction
+      </h1>
       <div className="border flex flex-col gap-3 border-black p-4 rounded-lg">
         <div className="flex flex-row justify-between">
           <p className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20 w-fit">
