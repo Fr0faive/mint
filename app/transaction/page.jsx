@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 async function getTransactions() {
-  const res = await fetch("/api/transaction", {
+  const res = await fetch(`${process.env.API_URL}/api/transaction`, {
     cache: "no-store",
   });
   if (!res.ok) {
