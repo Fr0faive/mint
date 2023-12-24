@@ -2,14 +2,13 @@
 import axios from "axios";
 
 const TransactionList = ({ data }) => {
-  const handleEdit = (id) => {};
   const handleDelete = (id) => {
     const isConfirm = window.confirm(
       "Apakah Anda yakin ingin menghapus data ini?"
     );
     if (isConfirm) {
       axios
-        .delete(`http://localhost:3000/api/transaction/${id}`)
+        .delete(`${process.env.API_URL}/api/transaction/${id}`)
         .then((res) => {
           console.log(res);
           alert("Catatan Berhasil Dihapus");
