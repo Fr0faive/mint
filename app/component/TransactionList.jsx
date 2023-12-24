@@ -8,7 +8,7 @@ const TransactionList = ({ data }) => {
     );
     if (isConfirm) {
       axios
-        .delete(`${process.env.API_URL}/api/transaction/${id}`)
+        .delete(`/api/transaction/${id}`)
         .then((res) => {
           console.log(res);
           alert("Catatan Berhasil Dihapus");
@@ -17,7 +17,7 @@ const TransactionList = ({ data }) => {
           console.log(err);
         })
         .finally(() => {
-          window.location.reload();
+          // window.location.reload();
         });
     }
   };
