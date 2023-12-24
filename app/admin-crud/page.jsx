@@ -1,8 +1,8 @@
-import AddTransaction from "../component/AddTransaction";
+import AddTransaction from "../component/ButtonAdd";
 import TransactionList from "../component/TransactionList";
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/api/transaction", {
+  const res = await fetch(`${process.env.API_URL}/api/transaction`, {
     cache: "no-store",
   });
   if (!res.ok) {
