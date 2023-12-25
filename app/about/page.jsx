@@ -2,7 +2,7 @@ import React from "react";
 
 const Aboutpage = () => {
   return (
-    <div className="bg-white/30 backdrop-blur-md p-4 rounded-3xl">
+    <div className="bg-white/30 backdrop-blur-md p-4 rounded-3xl animate-fade-down animate-ease-out">
       <h1 className="text-3xl font-semibold px-4">About Me</h1>
       <table className="table-auto border-spacing-4 border-separate">
         <tbody>

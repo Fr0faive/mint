@@ -14,9 +14,9 @@ async function getTransactions() {
 const TransactionsPage = async () => {
   //   const Transactions = await getTransactions();
   const [transactions] = await Promise.all([getTransactions()]);
-  console.log(transactions);
+
   return (
-    <div className="rounded-3xl bg-white/30 backdrop-blur-md p-4">
+    <div className="rounded-3xl bg-white/30 backdrop-blur-md p-4 animate-fade-down animate-ease-out">
       <h1 className="text-4xl mb-4 font-bold p-4">Transaction List</h1>
       <ul className="flex flex-col gap-5">
         {transactions.map((transaction) => (

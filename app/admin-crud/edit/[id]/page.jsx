@@ -53,7 +53,7 @@ const EditPage = ({ params }) => {
     }));
   };
   return (
-    <div className="flex flex-col p-5 gap-5 bg-white/30 backdrop-blur-md rounded-3xl">
+    <div className="flex flex-col p-5 gap-5 bg-white/30 backdrop-blur-md rounded-3xl animate-fade-down animate-ease-out">
       <h1 className="text-3xl font-bold px-4">
         <a href="/admin-crud">&larr;</a> Edit Catatan
       </h1>
